@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <title></title>
     <style>
-        .col { border: 1px solid black; }    </style>
+        .col {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -50,10 +53,17 @@
 
         </div>
         <div class="row">
-            <div class="col">Rounds</div>
+            <div class="col">Scenario
+                <select id="ScenarioDropdown">
+                    <option>Assault At The Satellite Array</option>
+                    <option>Chance Engagement</option>
+                    <option>Salvage Mission</option>
+                    <option>Scramble The Transmissions</option>
+                </select>
+            </div>
         </div>
         <div class="row">
-            <div class="col"></div>
+            <div class="col">Rounds</div>
             <div class="col">Objectives</div>
             <div class="col">Ships</div>
             <div class="col">Total</div>
@@ -68,7 +78,7 @@
             <div class="col"><input type="number" class="form-control" id="player1Total0" readonly disabled="disabled" /></div>
             <div class="col"></div>
             <div class="col"><input type="number" id="player2Ships0" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total0" readonly disabled="disabled"/></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total0" readonly disabled="disabled" /></div>
         </div>
         <div class="row">
             <div class="col">1</div>
@@ -77,115 +87,116 @@
             <div class="col"><input type="number" class="form-control" id="player1Total1" readonly disabled="disabled" /></div>
             <div class="col">&nbsp;</div>
             <div class="col"><input type="number" id="player2Ships1" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total1" readonly disabled="disabled"/></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total1" readonly disabled="disabled" /></div>
         </div>
         <div class="row">
             <div class="col">2</div>
             <div class="col"><input type="number" id="player1Objectives2" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships2" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player1Total2" readonly disabled="disabled"/></div>
+            <div class="col"><input type="number" class="form-control" id="player1Total2" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives2" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships2" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total2" readonly disabled="disabled"/></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total2" readonly disabled="disabled" /></div>
         </div>
         <div class="row">
             <div class="col">3</div>
             <div class="col"><input type="number" id="player1Objectives3" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships3" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player1Total3" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player1Total3" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives3" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships3" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total3" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total3" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">4</div>
             <div class="col"><input type="number" id="player1Objectives4" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships4" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player1Total4" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player1Total4" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives4" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships4" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total4" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total4" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">5</div>
             <div class="col"><input type="number" id="player1Objectives5" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships5" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player1Total5" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player1Total5" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives5" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships5" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total5" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total5" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">6</div>
             <div class="col"><input type="number" id="player1Objectives6" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships6" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player1Total6" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player1Total6" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives6" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships6" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total6" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total6" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">7</div>
             <div class="col"><input type="number" id="player1Objectives7" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships7" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player1Total7" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player1Total7" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives7" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships7" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total7" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total7" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">8</div>
             <div class="col"><input type="number" id="player1Objectives8" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships8" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player1Total8" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player1Total8" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives8" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships8" class="form-control" /></div>
-            <div class="col"><input type="number" class="form-control" id="player2Total8" readonly /></div>
+            <div class="col"><input type="number" class="form-control" id="player2Total8" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">9</div>
             <div class="col"><input type="number" id="player1Objectives9" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships9" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player1Total9" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives9" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships9" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player2Total9" readonly disabled="disabled" /></div>
+
         </div>
 
         <div class="row">
             <div class="col">10</div>
             <div class="col"><input type="number" id="player1Objectives10" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships10" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player1Total10" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives10" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships10" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player2Total10" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">11</div>
             <div class="col"><input type="number" id="player1Objectives11" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships11" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player1Total11" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives11" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships11" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player2Total11" readonly disabled="disabled" /></div>
         </div>
 
         <div class="row">
             <div class="col">12</div>
             <div class="col"><input type="number" id="player1Objectives12" class="form-control" /></div>
             <div class="col"><input type="number" id="player1Ships12" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player1Total12" readonly disabled="disabled" /></div>
             <div class="col"><input type="number" id="player2Objectives12" class="form-control" /></div>
             <div class="col"><input type="number" id="player2Ships12" class="form-control" /></div>
-            <div class="col">&nbsp;</div>
+            <div class="col"><input type="number" class="form-control" id="player2Total12" readonly disabled="disabled" /></div>
         </div>
 
 
